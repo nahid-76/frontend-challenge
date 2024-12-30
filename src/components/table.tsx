@@ -42,7 +42,7 @@ export const Table = <T extends Record<string, string>>({
       </tbody>
     </table>
   ) : (
-    <span className={`text-center font-bold mt-3 ${rowClass}`}>
+    <span className={`text-center font-bold mt-3`}>
       There Is Nothing To Show
     </span>
   );
