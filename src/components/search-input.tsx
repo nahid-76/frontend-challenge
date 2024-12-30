@@ -18,6 +18,7 @@ export const SearchInput = ({
     const params = new URLSearchParams(searchParams);
     if (term) {
       params.set(searchKey, term.toLowerCase().trim());
+      params.set("page", "1");
     } else {
       params.delete(searchKey);
     }
