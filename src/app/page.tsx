@@ -11,7 +11,7 @@ export default async function Home({
       <div className="container mx-auto py-5">
         <div className="flex flex-col w-full gap-2">
           <h1 className="font-bold">SpaceX</h1>
-          <SearchInput />
+          <SearchInput searchKey="search" debounceTime={300} />
           <PaginatedTable searchParams={searchParams} />
         </div>
       </div>
